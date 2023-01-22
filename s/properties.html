@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- ==== Meta Tag Starts ==== -->
+        <meta charset="utf-8">
+        <meta name="description" content="Next Awas - Next Generation Real Estate Advisor">
+        <meta name="keywords" content="">
+        <meta name="author" content="Next Awas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- ==== Meta Tag Ends ==== -->
+        <title>Next Generation Real Estate Advisor - Next Awas</title>
+        <link rel="icon" type="image" href="./img/logo.png">
+        <link rel="stylesheet" href="./index.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+        <!-- ===== Header Colour Change JS ===== -->
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script>
+            jQuery(function($){
+                var $navbar = $('.header');
+                $(window).scroll(function(event){
+                    var $current = $(this).scrollTop();
+                    if ($current > 50){
+                        $navbar.addClass('header-color');
+                    }
+                    else{
+                        $navbar.removeClass('header-color');
+                    }
+                });
+            });
+        </script>
+        <!-- ===== End Of Header Colour Change JS ===== -->    
+    <body>
+
+    <!-- ==== Global Header ==== -->        
+    <div class="header">
+        <a href=""><img src="./img/logo.png" alt=""></a>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="">Properties</a>
+            <a href="">About Us</a>
+        </nav>
+        <a href=""><button class="contact-btn">Contact Us</button></a>
+    </div>        
+
+    <!-- ==== Properties Image ==== -->        
+    <section class="prop-cover-img">
+        <div class="rowt">
+                <img src="./img/constructiondriven.jpg" alt="">
+        </div>
+    </section>
+    
+    <!-- ==== Search Filter ==== -->        
+    <section class="filter-search">
+        <div class="rowb">
+            <div class="col-17">
+            <label>Location</label>
+            <select>
+                <option>All</option>
+                <option>Lucknow</option>
+                <option>Noida</option>
+                <option>Delhi</option>
+            </select>
+            </div>
+            <div class="col-17">
+            <label>Project</label>
+            <select>
+                <option>All</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+            </div>
+            <div class="col-17">
+            <label>Status</label>
+            <select>
+                <option>All</option>
+                <option>Ongoing</option>
+                <option>Delivered</option>
+            </select>
+            </div>
+            <div class="col-17">
+            <label>Size</label>
+            <select>
+                <option>All</option>
+                <option>2BHK</option>
+                <option>3BHK</option>
+                <option>4BHK</option>
+                <option>5BHK</option>
+                <option>6BHK</option>
+            </select>
+        </div>
+        <div class="col-17">
+            <a href=""><button><i class='bx bx-search-alt'></i> Search</button></a>
+        </div>
+        </div>
+    </section>                    
+
+    <!-- ==== Awas Box ==== -->        
+    <section class="awas-box-section">
+        <div class="row">
+            <div class="col-30 awas-card">
+                <a href="./properties-single-page.html">
+                <div class="awas-card-img">
+                <img src="./img/pexels-photo-347141.jpeg" alt="">
+                <h6 class="tags">Sales</h6>
+                </div>
+                <div class="awas-card-des">
+                <h3>3 BHK Affordable Premium Villa</h3>
+                <p>Beautiful, updated, two level Villa near Kursi Road, Chaman Enclave, Lucknow....</p>
+                <p><span><i class='bx bx-bed'></i> 4 </span>&emsp; <span><i class='bx bx-bath'></i> 2 </span>&emsp; <span><i class='bx bx-area' ></i> 400 ft² </span></p>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-30 awas-card">
+                <a href="./properties-single-page.html">
+                <div class="awas-card-img">
+                <img src="./img/pexels-photo-297984.jpeg" alt="">
+                <h6 class="tags">Buy</h6>
+                </div>
+                <div class="awas-card-des">
+                <h3>3 BHK Affordable Premium Villa</h3>
+                <p>Beautiful, updated, two level Villa near Kursi Road, Chaman Enclave, Lucknow....</p>
+                <p><span><i class='bx bx-bed'></i> 4 </span>&emsp; <span><i class='bx bx-bath'></i> 2 </span>&emsp; <span><i class='bx bx-area' ></i> 400 ft² </span></p>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-30 awas-card">
+                <a href="./properties-single-page.html">
+                <div class="awas-card-img">
+                <img src="./img/pexels-photo-206172.webp" alt="">
+                <h6 class="tags">Rent</h6>
+                </div>
+                <div class="awas-card-des">
+                <h3>3 BHK Affordable Premium Villa</h3>
+                <p>Beautiful, updated, two level Villa near Kursi Road, Chaman Enclave, Lucknow....</p>
+                <p><span><i class='bx bx-bed'></i> 4 </span>&emsp; <span><i class='bx bx-bath'></i> 2 </span>&emsp; <span><i class='bx bx-area' ></i> 400 ft² </span></p>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-30 awas-card">
+                <a href="./properties-single-page.html">
+                <div class="awas-card-img">
+                <img src="./img/pexels-photo-347141.jpeg" alt="">
+                <h6 class="tags">Buy</h6>
+                </div>
+                <div class="awas-card-des">
+                <h3>3 BHK Affordable Premium Villa</h3>
+                <p>Beautiful, updated, two level Villa near Kursi Road, Chaman Enclave, Lucknow....</p>
+                <p><span><i class='bx bx-bed'></i> 4 </span>&emsp; <span><i class='bx bx-bath'></i> 2 </span>&emsp; <span><i class='bx bx-area' ></i> 400 ft² </span></p>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-30 awas-card">
+                <a href="./properties-single-page.html">
+                <div class="awas-card-img">
+                <img src="./img/pexels-photo-297984.jpeg" alt="">
+                <h6 class="tags">Sales</h6>
+                </div>
+                <div class="awas-card-des">
+                <h3>3 BHK Affordable Premium Villa</h3>
+                <p>Beautiful, updated, two level Villa near Kursi Road, Chaman Enclave, Lucknow....</p>
+                <p><span><i class='bx bx-bed'></i> 4 </span>&emsp; <span><i class='bx bx-bath'></i> 2 </span>&emsp; <span><i class='bx bx-area' ></i> 400 ft² </span></p>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-30 awas-card">
+                <a href="./properties-single-page.html">
+                <div class="awas-card-img">
+                <img src="./img/pexels-photo-206172.webp" alt="">
+                <h6 class="tags">Buy</h6>
+                </div>
+                <div class="awas-card-des">
+                <h3>3 BHK Affordable Premium Villa</h3>
+                <p>Beautiful, updated, two level Villa near Kursi Road, Chaman Enclave, Lucknow....</p>
+                <p><span><i class='bx bx-bed'></i> 4 </span>&emsp; <span><i class='bx bx-bath'></i> 2 </span>&emsp; <span><i class='bx bx-area' ></i> 400 ft² </span></p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== Global Footer ==== -->        
+    <section class="footer">
+        <div class="rowt">
+            <div class="col-40">
+                <h5>About Us</h5>
+                <br>
+                <p class="footer-about">Next Generation Real Estate Advisor. Buy, Sell, Invest in Residential & Commercial. We help our clints in finding, comparing & negotiating their Next Awas.</p>
+                <br>
+                <a href=""><i class='bx bxl-facebook social-icon'></i></a>&nbsp;&nbsp; <a href=""><i class='bx bxl-linkedin social-icon'></i></a>&nbsp;&nbsp; <a href=""><i class='bx bxl-twitter social-icon'></i></a>&nbsp;&nbsp; <a href=""><i class='bx bxl-instagram social-icon'></i></a>
+            </div>
+            <div class="col-25">
+                <h5>Quick Links</h5>
+                <br>
+                <p class="footer-list"><a href="">Sell Properties</a></p>
+                <p class="footer-list"><a href="">Buy Properties</a></p>
+                <p class="footer-list"><a href="">About Us</a></p>
+                <p class="footer-list"><a href="">Contact Us</a></p>
+            </div>
+            <div class="col-25">
+                <h5>Policies</h5>
+                <br>
+                <p class="footer-list"><a href="">Privacy Policy</a></p>
+                <p class="footer-list"><a href="">Terms Of Use</a></p>
+                <p class="footer-list"><a href="">Disclaimer</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <p> Copyright © 2023 | All Rights Reserved</p>
+        </div>
+    </section>
+
+    </body>
+</html>    

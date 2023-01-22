@@ -1,0 +1,871 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --pri-col: #161616;
+    --sec-col: #414141;
+    --tir-col: #f9f9f9;
+    --light-col: #e0e0e0;
+    --white-col: #ffffff;
+}
+
+section{
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.rowt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.rowt > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.rowb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.rowb > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Play', sans-serif;
+}
+
+.heading-des{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--sec-col);
+}
+
+.main-heading{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* === Global Header === */
+
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 70px;
+    z-index: 1000;
+}
+
+.header-color{
+    background-color: #e0e0e0ec;
+}
+
+.header img{
+    width: 225px;
+    height: auto;
+}
+
+.header nav a{
+    display: inline-block;
+    padding: 14px 28px;
+    margin: 0px 5px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: 'Play', sans-serif;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.header nav a:hover{
+    background-color: var(--pri-col);
+    color: var(--light-col);
+    transform: scale(1.05);
+}
+
+.header .contact-btn{
+    font-size: 1.1rem;
+    font-family: 'Play', sans-serif;
+    padding: 12.5px 26.5px;
+    border: solid 1.5px var(--pri-col);
+    border-radius: 6px;
+    color: var(--light-col);
+    background-color: var(--pri-col);
+    transition: 0.5s;
+}
+
+.header .contact-btn:hover{
+    cursor: pointer;
+    color: #000000;
+    background-color: #ffffff00;
+    transform: scale(1.05);
+}
+
+/* ==== Copyright Section ==== */
+
+.copyright-section{
+    background-image: linear-gradient(225deg, rgba(23, 23, 23, 0.765), #87878717), url(./img/house-garden-transparent-png-stickpng-31.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.copyright-section .row{
+    padding: 70px;
+    height: calc(100vh - 140px);
+}
+
+.copyright-section .row .col-47{
+    flex-basis: 47%;
+    margin: 15px;
+}
+
+.copyright-section h6{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--sec-col);
+}
+
+.copyright-section h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.copyright-section p{
+    font-size: 1rem;
+    color: var(--sec-col);
+    margin-bottom: 25px;
+    margin-right: 15%;
+}
+
+.copyright-section button{
+    font-size: 1.1rem;
+    font-family: 'Play', sans-serif;
+    padding: 14px 28px;
+    border: solid 1.5px var(--pri-col);
+    border-radius: 6px;
+    color: var(--light-col);
+    background-color: var(--pri-col);
+    transition: 0.5s;
+}
+
+.copyright-section button:hover{
+    cursor: pointer;
+    color: var(--pri-col);
+    background-color: #ffffff00;
+    transform: scale(1.05);
+}
+
+/* ==== Who We Are ==== */
+
+.who-we-are{
+    background: linear-gradient(#e0e0e0d2, #e0e0e0c0), url(./img/dotted-white-stone_1194-6455.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.who-we-are .row{
+    padding: 70px;
+}
+
+.who-we-are .row .col-40{
+    flex-basis: 35%;
+    margin: 15px 30px;
+}
+
+.who-we-are .row .col-50{
+    flex-basis: 50%;
+    margin: 15px 30px;
+}
+
+.who-we-are .row .col-40 img{
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.who-we-are h6{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--sec-col);
+}
+
+.who-we-are h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.who-we-are p{
+    color: var(--sec-color);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.who-we-are button{
+    font-size: 1.1rem;
+    font-family: 'Play', sans-serif;
+    padding: 14px 28px;
+    border: solid 1.5px var(--pri-col);
+    border-radius: 6px;
+    color: var(--light-col);
+    background-color: var(--pri-col);
+    transition: 0.5s;
+}
+
+.who-we-are button:hover{
+    cursor: pointer;
+    color: var(--pri-col);
+    background-color: #ffffff00;
+    transform: scale(1.05);
+}
+
+/* ==== Awas Box ==== */
+
+.awas-box-section .row{
+    padding: 70px;
+}
+
+.awas-box-section .row .col-30{
+    flex-basis: 30%;
+    margin: 15px;
+}
+
+.awas-box-section .row .awas-card{
+    border-radius: 12px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.awas-box-section .row .awas-card:hover{
+    box-shadow: rgba(255, 255, 255, 0.057) 0px 1px 1px 0px inset, rgba(67, 67, 89, 0.185) 0px 50px 100px -20px, rgba(45, 45, 45, 0.231) 0px 30px 60px -30px;
+}
+
+.awas-card a{
+    text-decoration: none;
+}
+
+.awas-card a:link{
+    color: var(--sec-col);
+}
+
+.awas-card .awas-card-img{
+    display: block;
+    border-radius: 12px 12px 0px 0px;
+    overflow: hidden;
+}
+
+.awas-card .awas-card-img img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/2.5;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+    transition: 3s;
+}
+
+.awas-card .awas-card-img img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.awas-card .awas-card-img .tags{
+    position: absolute;
+    margin: -40px 20px;
+    color: var(--tir-col);
+    background-color: var(--pri-col);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 3px 12px;
+    border-radius: 15px;
+}
+
+.awas-card .awas-card-des{
+    padding: 20px;
+}
+
+.awas-card-des h3{
+    color: var(--pri-col);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.awas-card-des p{
+    color: var(--sec-color);
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 12px 0px;
+}
+
+.awas-card-des p span i{
+    font-size: 1.3rem;
+}
+
+
+/* ==== Our Services ==== */
+
+.our-services{
+    background-color: var(--light-col);
+}
+
+.our-services .row{
+    padding: 70px;
+}
+
+.our-services .row .col-30{
+    flex-basis: 26%;
+    margin: 15px;
+}
+
+.our-services .row .services-card{
+    border-radius: 12px;
+    background-color: var(--tir-col);
+    padding: 40px 25px;
+    box-shadow: rgba(17, 12, 46, 0.096) 0px 48px 100px 0px;
+}
+
+.services-card img{
+    width: 33%;
+}
+
+.services-card h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--pri-col);
+    margin: 15px 0px;
+}
+
+.services-card p{
+    font-size: 1rem;
+    color: var(--sec-col);
+}
+
+/* ==== Contact Us Section ==== */
+
+.contact-section{
+    background: linear-gradient(#ffffffe0, #ffffffc0), url(./img/dotted-white-stone_1194-6455.webp);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-section .row{
+    padding: 70px 45px;
+}
+
+.contact-section .row .col-44{
+    flex-basis: 44%;
+    margin: 15px 30px;
+}
+
+.contact-section form{
+    background-color: var(--white-col);
+    padding: 50px;
+    border-radius: 24px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.contact-section h2{
+    color: var(--pri-col);
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.contact-section h6{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--sec-col);
+}
+
+.contact-section p{
+    color: var(--sec-color);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.contact-section form input, textarea{
+    width: calc(100% - 20px);
+    padding: 14px 10px;
+    margin: 5px 0px;
+    background-color: var(--light-col);
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: 'Play', sans-serif;
+}
+
+.contact-section form input, textarea:active{
+    outline: none;
+}
+
+.contact-section form button{
+    width: 100%;
+    padding: 14px 10px;
+    background-color: var(--pri-col);
+    color: var(--tir-col);
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-family: 'Play', sans-serif;
+}
+
+.contact-section form button:hover{
+    cursor: pointer;
+}
+
+.contact-section .contact-icon{
+    font-size: 1.8rem;
+    padding: 6px;
+    border: solid 1.5px var(--pri-col);
+    border-radius: 6px;
+    color: var(--pri-col);
+    background-color: #ffffff00;
+    transition: 0.5s;
+}
+
+.contact-section .contact-icon:hover{
+    cursor: pointer;
+    color: var(--light-col);
+    background-color: var(--pri-col);
+    transform: translateY(-5px);
+}
+
+/* ==== Global Footer ==== */
+
+.footer .rowt{
+    background-color: var(--light-col);
+    padding: 50px 70px;
+}
+
+.footer .rowt .col-40{
+    flex-basis: 40%;
+    margin: 15px;
+}
+
+.footer .rowt .col-25{
+    flex-basis: 25%;
+    margin: 15px;
+}
+
+.footer h5{
+    color: var(--pri-col);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.footer .footer-about{
+    color: var(--sec-color);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-right: 15%;
+}
+
+.footer .social-icon{
+    font-size: 1.8rem;
+    padding: 6px;
+    border: solid 1.5px var(--pri-col);
+    border-radius: 6px;
+    color: var(--light-col);
+    background-color: var(--pri-col);
+    transition: 0.5s;
+}
+
+.footer .social-icon:hover{
+    cursor: pointer;
+    color: var(--pri-col);
+    background-color: #ffffff00;
+    transform: translateY(-5px);
+}
+
+.footer .footer-list{
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+.footer .footer-list:hover{
+    transform: translateX(10px);
+}
+
+.footer .footer-list a{
+    text-decoration: none;
+    color: var(--pri-col);
+}
+
+.footer .row{
+    background-color: var(--pri-col);
+    padding: 15px 70px;
+}
+
+.footer .row p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--tir-col);
+    text-align: center;
+}
+
+/* ==== Properties Page ==== */
+/* ==== Properties Cover Image*/
+.prop-cover-img{
+    margin-top: 85px;
+}
+
+.prop-cover-img .rowt img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: grayscale(75%);
+}
+
+.prop-cover-img .rowt img:hover{
+    filter: grayscale(0%);
+}
+
+/* ==== filter-search ==== */
+.filter-search .rowb{
+    position: absolute;
+    top: 325px;
+    right: 0;
+    left: 0;
+    padding: 25px 0px;
+    margin: 0px 95px;
+    border-radius: 12px;
+    background-color: var(--white-col);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.filter-search .rowb .col-17{
+    flex-basis: 17%;
+    padding: 10px;
+}
+
+.filter-search .rowb .col-17 label{
+    font-size: 1rem;
+    font-family: 'Play', sans-serif;
+}
+
+.filter-search .rowb .col-17 select{
+    width: 100%;
+    padding: 12px;
+    background-color: var(--light-col);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.filter-search .rowb .col-17 button{
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: 'Play', sans-serif;
+    padding: 12px;
+    border: solid 1.5px var(--pri-col);
+    border-radius: 6px;
+    color: var(--light-col);
+    background-color: var(--pri-col);
+    transition: 0.5s;
+}
+
+.filter-search .rowb .col-17 button:hover{
+    cursor: pointer;
+    color: var(--pri-col);
+    background-color: #ffffff00;
+    transform: scale(1.05);
+}
+
+
+/* ==== Properties Details Page ==== */
+/* ==== Properties Image ==== */
+
+.prop-img{
+    margin-top: 85px;
+    background-color: var(--tir-col);
+}
+
+.prop-img .rowt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rowt > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.prop-img .rowt .col-left, .col-right{
+    flex-basis: 50%;
+}
+
+.prop-img .rowt .col-left img{
+    display: block;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.prop-img .rowt .col-right img{
+    display: block;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.prop-img .rowt .col-right img{
+    display: block;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.prop-img .rowt img:hover{
+    cursor: pointer;
+    filter: grayscale(75%);
+}
+
+/* ==== Properties Details ==== */
+
+.prop-det{
+    padding: 40px 0px;
+    background-color: var(--tir-col);
+}
+
+.prop-det .rowb{
+    padding: 0px 70px;
+}
+
+.prop-det .rowb .col-64{
+    flex-basis: 64%;
+    margin: 0px 15px;
+}
+
+.prop-det .rowb .col-30{
+    flex-basis: 30%;
+    margin: 0px 15px;
+}
+
+.prop-det .rowb .col-64 h2{
+    color: var(--pri-col);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.prop-det .rowb .col-64 h6{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--sec-col);
+}
+
+.prop-det .rowb .col-30{
+    text-align: right;
+}
+
+.prop-det .rowb .col-30 h2{
+    color: var(--sec-col);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.prop-det .rowb .col-30 a button{
+    font-size: 0.9rem;
+    padding: 3px 6px;
+    margin-left: 8px;
+    border-radius: 6px;
+    border: solid 1px var(--pri-col);
+    font-weight: 300;
+    color: var(--pri-col);
+    background-color: #ffffff00;
+}
+
+.prop-det .rowb .col-30 a button:hover{
+    cursor: pointer;
+    color: var(--tir-col);
+    background-color: var(--pri-col);
+}
+
+.prop-det .rowt{
+    padding: 0px 70px;
+}
+
+.prop-det .rowt .col-64{
+    flex-basis: 64%;
+    margin: 15px;
+}
+
+.prop-det .rowt .col-30{
+    flex-basis: 30%;
+    margin: 15px;
+}
+
+.prop-det .rowt .card{
+    padding: 30px;
+    margin: 30px 0px;
+    border-radius: 12px;
+    background-color: var(--white-col);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.prop-det .rowt .card h6{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--pri-col);
+}
+
+.prop-det .rowt .card p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--sec-col);
+}
+
+.prop-det .schedule-showing input, textarea{
+    width: calc(100% - 20px);
+    padding: 14px 10px;
+    margin: 5px 0px;
+    background-color: var(--light-col);
+    color: var(--sec-col);
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.prop-det .schedule-showing input, textarea:active{
+    outline: none;
+}
+
+.prop-det .schedule-showing button{
+    width: 100%;
+    padding: 14px 10px;
+    background-color: var(--pri-col);
+    color: var(--tir-col);
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-family: 'Play', sans-serif;
+}
+
+.prop-det .schedule-showing button:hover{
+    cursor: pointer;
+}
+
+.prop-det .overview-element-updated{
+    display: inline-block;
+    list-style-type: none;
+    text-align: left;
+    margin-right: 20PX;
+    font-family: 'Poppins', sans-serif;
+}
+
+.prop-det .overview-element-updated li:first-child{
+    font-weight: 600;
+}
+
+.prop-det .overview-element{
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    padding: 0px 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.prop-det .overview-element li{
+    font-size: 1rem;
+    color: var(--pri-col);
+}
+
+.prop-det .overview-element li i{
+    font-size: 1.5rem;
+}
+
+.prop-det .address ul{
+    list-style-type: none;
+}
+
+.prop-det .address ul li{
+    display: inline-block;
+    width: 48%;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--sec-col);
+    font-family: 'Poppins', sans-serif;
+}
+
+.prop-det .address ul li span{
+    font-weight: 500;
+}
+
+.prop-det .address a button{
+    padding: 14px 28px;
+    background-color: var(--pri-col);
+    color: var(--tir-col);
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-family: 'Play', sans-serif;
+}
+
+.prop-det .address a button:hover{
+    cursor: pointer;
+}
+
+.prop-det .details ul{
+    list-style-type: none;
+}
+
+.prop-det .details ul li{
+    display: inline-block;
+    width: 48%;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--sec-col);
+    font-family: 'Poppins', sans-serif;
+}
+
+.prop-det .details ul li span{
+    font-weight: 500;
+}
+
+
